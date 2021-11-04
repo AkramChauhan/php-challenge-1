@@ -2,7 +2,10 @@
 Thanks for visiting this repository.
 
 This repository contains very simple core PHP project. Here is some screenshots.
-
+<pre>
+username = admin 
+password = password
+</pre>
 ![image](https://user-images.githubusercontent.com/13075784/140319549-b5fd9d60-5730-450e-92cb-fb519546bc17.png)
 ![image](https://user-images.githubusercontent.com/13075784/140319746-92e6835d-e79c-4159-a31d-c35a4d711be5.png)
 ![image](https://user-images.githubusercontent.com/13075784/140320284-8c972a8a-e8d6-44b6-9b46-98e00bd124fd.png)
