@@ -152,7 +152,7 @@ class database {
     if($check !== false) {
       $uploadOk = 1;
       if (move_uploaded_file($file["picture"]["tmp_name"], $target_file)) {
-        echo "The file ". htmlspecialchars( basename( $file["picture"]["name"])). " has been uploaded.";
+        // echo "The file ". htmlspecialchars( basename( $file["picture"]["name"])). " has been uploaded.";
       }else{
         $uploadOk = 0;
       }

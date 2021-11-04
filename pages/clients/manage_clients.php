@@ -43,12 +43,11 @@ if(isset($_REQUEST['submit'])){
     $payload = $db->upload_image($_FILES);
     if($payload==0){
       $_SESSION['error'] = "Image upload failed.";
-      $db->redirect(SITEURL.$table."/create");
+      // $db->redirect(SITEURL.$table."/create");
     }
   }
 
-  if($mode=="add"){    
-
+  if($mode=="add"){
     $rows   = array(
       "name",
       "code",
@@ -64,7 +63,7 @@ if(isset($_REQUEST['submit'])){
     $record_id = $db->insert($table,$values,$rows);
     $_SESSION['success'] = "New ".$singular_table." Added.";
     $db->redirect(SITEURL.$table);
-
+    
   }else if(isset($_REQUEST['mode']) && $_REQUEST['mode']=="edit"){
     
     $rows   = array(
