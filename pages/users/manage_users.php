@@ -58,7 +58,7 @@ if(isset($_REQUEST['submit'])){
       "username" =>$username,
     );
     if(isset($_REQUEST['password']) && !empty($_REQUEST['password'])){
-      $rows['password'] = $_REQUEST['password'];
+      $rows['password'] = md5($_REQUEST['password']);
     }
     $where  = "id='".$_REQUEST['id']."'";
     
